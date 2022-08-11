@@ -136,7 +136,8 @@ class TestInheritance
 
 
 
-/*using System;
+/*
+using System;
 namespace Application
 {
     class Gadget
@@ -223,7 +224,7 @@ class AllEmp
 */
 
        //######### hierarchical Inheritance ########//
-
+using System;
 class Teacher
 {
 
