@@ -223,63 +223,53 @@ class AllEmp
 
 */
 
-       //######### hierarchical Inheritance ########//
+       //######### hierarchical Inheritance ########//}
+
+
 using System;
 class Teacher
 {
-
-	public void programming()
-	{
-		Console.WriteLine("Java programming...");
-	}
-
-	public void physics()
-	{
-
-		Console.WriteLine("Physics...");
-	}
-
-	public void chemistry()
-	{
-
-		Console.WriteLine("Chemistry...");
-
-	}
+    public void program()
+    {
+        Console.WriteLine("C# Programming...");
+    }
+    public void physics()
+    {
+        Console.WriteLine("Physics Lecture");
+    }
+    public void chemistry()
+    {
+        Console.WriteLine("Chemistry Lecture");
+    }
 }
-
- class ComputerDepartment : Teacher
+class ComputerDepartment:Teacher
 {
-
-	public void learn()
-	{
-		Console.WriteLine("ComputerDepartment : Learn...");
-	}
-
+    public void learn()
+    {
+        Console.WriteLine("Programming...");
+    }
+        
 }
 
-class ScienceDepartment : Teacher
+class ScienceDeparment:Teacher
 {
+    public void learn()
+    {
+        Console.WriteLine("Science...");
+    }
 
-	public void learn()
-	{
-		Console.WriteLine("\nScienceDepartment : Learn...");
-	}
 }
-
-
-public class TestHierarchicalInheritance
+class HierarchicalTest
 {
+    public static void Main(string[] args)
+    {
+        ComputerDepartment cd= new ComputerDepartment();
+        cd.learn();
+        cd.program();
 
-	public static void Main(String[] args)
-	{
-
-		ComputerDepartment cd = new ComputerDepartment();
-		cd.learn();
-		cd.programming();
-
-		ScienceDepartment sd = new ScienceDepartment();
-		sd.learn();
-		sd.physics();
-		sd.chemistry();
-}
+        ScienceDeparment sc= new ScienceDeparment();
+        sc.learn();
+        sc.physics();
+        sc.chemistry();
+    }
 }
