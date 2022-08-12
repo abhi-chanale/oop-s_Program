@@ -126,7 +126,57 @@ class TestInheritance
 
 */
 
+  //######### hierarchical Inheritance ########//}
+/*
 
+using System;
+class Teacher
+{
+    public void program()
+    {
+        Console.WriteLine("C# Programming...");
+    }
+    public void physics()
+    {
+        Console.WriteLine("Physics Lecture");
+    }
+    public void chemistry()
+    {
+        Console.WriteLine("Chemistry Lecture");
+    }
+}
+class ComputerDepartment:Teacher
+{
+    public void learn()
+    {
+        Console.WriteLine("Programming...");
+    }
+        
+}
+
+class ScienceDeparment:Teacher
+{
+    public void learn()
+    {
+        Console.WriteLine("Science...");
+    }
+
+}
+class HierarchicalTest
+{
+    public static void Main(string[] args)
+    {
+        ComputerDepartment cd= new ComputerDepartment();
+        cd.learn();
+        cd.program();
+
+        ScienceDeparment sc= new ScienceDeparment();
+        sc.learn();
+        sc.physics();
+        sc.chemistry();
+    }
+}
+*/
 
 
 
@@ -192,7 +242,7 @@ namespace Application
 //######## Compile Time Polymorphism ########//
 
 
-/*
+
 using System;
 class Staff
 {
@@ -221,55 +271,6 @@ class AllEmp
     }
 }
 
-*/
-
-       //######### hierarchical Inheritance ########//}
 
 
-using System;
-class Teacher
-{
-    public void program()
-    {
-        Console.WriteLine("C# Programming...");
-    }
-    public void physics()
-    {
-        Console.WriteLine("Physics Lecture");
-    }
-    public void chemistry()
-    {
-        Console.WriteLine("Chemistry Lecture");
-    }
-}
-class ComputerDepartment:Teacher
-{
-    public void learn()
-    {
-        Console.WriteLine("Programming...");
-    }
-        
-}
-
-class ScienceDeparment:Teacher
-{
-    public void learn()
-    {
-        Console.WriteLine("Science...");
-    }
-
-}
-class HierarchicalTest
-{
-    public static void Main(string[] args)
-    {
-        ComputerDepartment cd= new ComputerDepartment();
-        cd.learn();
-        cd.program();
-
-        ScienceDeparment sc= new ScienceDeparment();
-        sc.learn();
-        sc.physics();
-        sc.chemistry();
-    }
-}
+     
