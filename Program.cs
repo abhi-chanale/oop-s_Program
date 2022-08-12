@@ -1,4 +1,4 @@
-﻿
+
 
 
 //######## Abstraction ########//
@@ -81,9 +81,39 @@ class Program
 }
 */
 
+     //######### Multilevel Inheritance ########//
+
+/*
+using System;
+namespace applicaion {
+class Shape {
+   public void display() {
+      Console.WriteLine("Inside display");
+   }
+}
+class Rectangle:Shape {
+   public void area() {
+      Console.WriteLine("Inside area");
+   }
+}
+class Cube:Rectangle {
+   public void volume() {
+     Console.WriteLine("Inside volume");
+   }
+}
+public class Tester {
+   public static void Main(String[] arg) 
+   {
+      Cube c = new Cube();
+      c.display();
+      c.area();
+      c.volume();
+   }
+}
+}
+*/
 
 //######### Multiple Inheritance ########//
-
 
 
 /*
